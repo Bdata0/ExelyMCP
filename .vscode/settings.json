@@ -1,0 +1,49 @@
+{
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+
+    // Ruff настройки
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+
+    // Тестирование
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+
+    // MyPy
+    "python.linting.enabled": true,
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--ignore-missing-imports",
+        "--follow-imports=silent",
+        "--show-column-numbers"
+    ],
+
+    // Файлы
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/.pytest_cache": true,
+        "**/.mypy_cache": true,
+        "**/.ruff_cache": true
+    },
+
+    // Git
+    "git.autofetch": true,
+    "git.confirmSync": false,
+
+    // Остальные настройки
+    "editor.rulers": [88],
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true
+}
