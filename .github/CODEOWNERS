@@ -1,0 +1,10 @@
+# Global owners
+* @Bdata0
+
+# Python files
+*.py @Bdata0
+
+# Configuration files
+*.toml @Bdata0
+*.yaml @Bdata0
+*.yml @Bdata0
